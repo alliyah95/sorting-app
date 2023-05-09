@@ -1,6 +1,6 @@
-import { Sortable, Sorter } from "./Sorter";
+import { Sorter } from "./Sorter";
 
-export class NumbersCollection extends Sorter implements Sortable {
+export class NumbersCollection extends Sorter {
     data: number[];
 
     constructor(data: number[]) {
@@ -12,7 +12,7 @@ export class NumbersCollection extends Sorter implements Sortable {
     // constructor(public data: number[]){}
 
     // when calling this, we treat it as if length is a property
-    // so we can use it as: collection.length
+    // so, we can use it as: collection.length
     // this is essentially a property and not a method
     get length(): number {
         return this.data.length;

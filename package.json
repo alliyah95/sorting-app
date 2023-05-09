@@ -9,7 +9,7 @@
         "start": "concurrently npm:start:*"
     },
     "keywords": [],
-    "author": "",
+    "author": "alliyah95",
     "license": "ISC",
     "dependencies": {
         "concurrently": "^8.0.1",

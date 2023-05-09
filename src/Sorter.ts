@@ -10,10 +10,13 @@ export abstract class Sorter {
     // to implement in the future
     abstract compare(leftIndex: number, rightIndex: number): boolean;
     abstract swap(leftIndex: number, rightIndex: number): void;
+
     // this should be a getter in the child class, but when defining it in an
-    // abstract class, we define it as if it's a variable
+    // abstract class, we define it as if it's a variable / field
     abstract length: number;
 
+    // the this keyword here will refer to the
+    // children classes
     sort(): void {
         const { length } = this;
         for (let i = 0; i < length; i++) {
